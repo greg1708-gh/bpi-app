@@ -1,0 +1,1155 @@
+{
+ "trades": {
+  "builder": "QBCC licensed builder",
+  "engineer": "QBCC licensed structural engineer",
+  "plumber": "QBCC licensed plumber",
+  "roofp": "QBCC licensed roof plumber",
+  "rooft": "QBCC licensed roof tiler",
+  "elec": "QBCC licensed electrician",
+  "wp": "QBCC licensed waterproofer",
+  "pest": "QBCC licensed pest manager",
+  "carp": "QBCC licensed carpenter",
+  "glaz": "QBCC licensed glazier",
+  "paint": "QBCC licensed painter",
+  "pool": "QBCC licensed pool safety inspector",
+  "arb": "QBCC licensed arborist",
+  "conc": "QBCC licensed concreter",
+  "fence": "QBCC licensed fencing contractor",
+  "asb": "QBCC licensed asbestos contractor",
+  "plast": "QBCC licensed plasterer",
+  "cab": "QBCC licensed cabinet maker",
+  "ins": "QBCC licensed insulation installer",
+  "stump": "QBCC licensed restumping contractor",
+  "land": "QBCC licensed landscaper",
+  "tiler": "QBCC licensed wall & floor tiler",
+  "reinsp": "Further inspection when accessible",
+  "owner": "Owner maintenance"
+ },
+ "library": [
+  {
+   "area": "Site",
+   "subs": [
+    {
+     "name": "Fences & gates",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Fence palings/sheets loose, damaged or leaning at [location]. Repair or replace affected sections.",
+       "trades": [
+        "fence"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Pool gate did not self-close and self-latch from all open positions at the time of inspection. Pool barrier compliance was not assessed.",
+       "trades": [
+        "pool"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Timber fence posts show decay at ground level, reducing stability.",
+       "trades": [
+        "fence"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Paths & driveways",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Cracking to concrete path/driveway at [location], typical of shrinkage and minor ground movement. Monitor.",
+       "trades": [
+        "conc"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Displaced or uneven paving at [location] creates a trip hazard.",
+       "trades": [
+        "conc"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Retaining walls",
+     "comments": [
+      {
+       "cls": "Major",
+       "text": "Retaining wall at [location] is leaning/bulging with cracking, indicating movement. Walls over 1 m may require engineering design and approval.",
+       "trades": [
+        "engineer"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Timber sleepers to retaining wall show decay and deflection. Replacement will be required.",
+       "trades": [
+        "builder",
+        "land"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "No visible drainage (weep holes or ag drain) to retaining wall. Hydrostatic pressure may cause future movement.",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Surface water & stormwater",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Ground surface falls toward the building at [location]; water is likely to pond against footings/slab edge.",
+       "trades": [
+        "plumber",
+        "land"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Downpipe at [location] discharges onto the ground and is not connected to the stormwater system.",
+       "trades": [
+        "plumber"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Surface drain/grated pit blocked with debris. Clear and test.",
+       "trades": [
+        "plumber"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Outbuildings, carports & sheds",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Steel posts to carport/shed corroded at the base. Treat or replace before section loss occurs.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Fibre cement sheeting to [location] may contain asbestos (age of material). Do not drill, cut or sand. Testing recommended before any work.",
+       "trades": [
+        "asb"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Trees & vegetation",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Large tree within close proximity of the building at [location]. Roots may affect footings, paths and drainage.",
+       "trades": [
+        "arb"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Vegetation overhanging the roof will deposit debris in gutters. Prune back.",
+       "trades": [
+        "arb",
+        "owner"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Roof exterior",
+   "subs": [
+    {
+     "name": "Roof cladding",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Cracked, broken or displaced roof tiles at [location]. Replace to prevent water entry.",
+       "trades": [
+        "rooft"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Corrosion to metal roof sheeting with perforation at [location]; water entry is likely. Replacement of affected sheets required.",
+       "trades": [
+        "roofp"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Loose or missing roofing fixings at [location].",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ridge & hip capping",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Pointing/bedding to ridge and hip capping cracked or deteriorated. Re-bed and re-point.",
+       "trades": [
+        "rooft"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Flashings",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Flashing at [penetration/wall junction] is loose, lifted or poorly sealed.",
+       "trades": [
+        "roofp"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Flashing at wall/roof junction is missing or inadequate, with evidence of water entry below.",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Gutters & downpipes",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Gutters contain debris and vegetation; overflow is likely in heavy rain. Clean and check falls.",
+       "trades": [
+        "roofp",
+        "owner"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Gutters/downpipes corroded or leaking at joints at [location].",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Eaves, fascias & barges",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Fascia/barge boards show decay and failed paint coatings at [location].",
+       "trades": [
+        "carp",
+        "paint"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Eave lining sheets cracked, sagging or loose at [location].",
+       "trades": [
+        "carp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Skylights, vents & penetrations",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Seals around roof penetration/skylight at [location] have deteriorated.",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Exterior",
+   "subs": [
+    {
+     "name": "Walls & cladding",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Hairline cracking (under 1 mm) to brickwork/render at [location], typical of minor movement. Monitor.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Stepped cracking to brickwork at [location], approx. [x] mm wide, indicating possible footing movement. Structural assessment recommended.",
+       "trades": [
+        "engineer"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Weatherboards split, loose or decayed at [location], mainly to lower boards.",
+       "trades": [
+        "carp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Windows & external doors",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Window frames/sills weathered with decay at [location]. Paint coatings have failed.",
+       "trades": [
+        "carp",
+        "paint"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Cracked glazing at [location].",
+       "trades": [
+        "glaz"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Stairs, balustrades & handrails",
+     "comments": [
+      {
+       "cls": "Safety",
+       "text": "Balustrade/handrail at [location] is loose, missing or below current height; openings may exceed 125 mm.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Stair stringers/treads at [location] are decayed or inadequately supported.",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Decks, verandahs & balconies",
+     "comments": [
+      {
+       "cls": "Major",
+       "text": "Deck posts/bearers decayed or inadequately supported and fixed (e.g. no stirrups, timber in ground) at [location].",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Decking boards weathered, cupped or with loose fixings.",
+       "trades": [
+        "carp"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Signs of failed balcony waterproofing: staining/efflorescence to the soffit below.",
+       "trades": [
+        "wp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "DPC, weep holes & vents",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Weep holes/subfloor vents obstructed by garden beds, paving or render at [location]. Clear obstructions.",
+       "trades": [
+        "builder",
+        "land"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Signs of rising damp to lower walls (efflorescence, mortar decay, high moisture readings) at [location].",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Paintwork & finishes",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "External paint coatings weathered and flaking. Maintenance repainting required.",
+       "trades": [
+        "paint"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Interior",
+   "subs": [
+    {
+     "name": "Ceilings",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Cracking to ceiling sheet joints/cornice at [location].",
+       "trades": [
+        "plast"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Ceiling sagging at [location]; possible failed fixings. Risk of collapse. Avoid area until assessed.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Water staining to ceiling at [location] indicating a past or present roof leak. Moisture reading: [value].",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Walls",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Cracking above door/window head at [location], approx. [x] mm wide, typical of minor movement. Monitor; seek advice if it widens.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Wide or stepped cracking at [location] with doors binding, indicating structural movement.",
+       "trades": [
+        "engineer"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Elevated moisture readings at base of wall adjoining wet area at [location].",
+       "trades": [
+        "plumber",
+        "wp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Floors",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Floor out of level with a noticeable fall at [location].",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Springy or squeaking floor at [location]; framing or fixings may be inadequate.",
+       "trades": [
+        "carp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Doors & windows",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Door at [location] binds on its frame or does not latch.",
+       "trades": [
+        "carp"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Window at [location] does not operate freely; hardware or locks broken/missing.",
+       "trades": [
+        "glaz",
+        "carp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Kitchen",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Base cabinet board under the sink is swollen from moisture. Check for leaks and replace damaged panel.",
+       "trades": [
+        "plumber",
+        "cab"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Benchtop joins/sealant deteriorated at [location].",
+       "trades": [
+        "cab"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Power outlet within close reach of the sink has a cracked cover.",
+       "trades": [
+        "elec"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Bathroom, ensuite & laundry",
+     "comments": [
+      {
+       "cls": "Major",
+       "text": "Evidence of shower leak: elevated moisture, drummy/loose tiles and/or deteriorated grout, with staining to adjoining walls.",
+       "trades": [
+        "wp",
+        "tiler"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Silicone sealant around bath/shower/vanity has deteriorated. Remove and re-seal.",
+       "trades": [
+        "tiler"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Inadequate exhaust ventilation; mould growth to ceiling.",
+       "trades": [
+        "elec"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Shower screen glass shows no visible safety glass marking.",
+       "trades": [
+        "glaz"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Internal stairs & balustrades",
+     "comments": [
+      {
+       "cls": "Safety",
+       "text": "Balustrade height and/or openings do not appear to meet current standards; horizontal elements may be climbable.",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Smoke alarms & visible electrical",
+     "comments": [
+      {
+       "cls": "Safety",
+       "text": "Smoke alarms missing, not interconnected or not in all required locations. Compliance with current requirements was not verified.",
+       "trades": [
+        "elec"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Damaged or exposed wiring/fittings observed at [location] (visual inspection only).",
+       "trades": [
+        "elec"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Roof space",
+   "subs": [
+    {
+     "name": "Roof framing",
+     "comments": [
+      {
+       "cls": "Major",
+       "text": "Roof framing members at [location] are cracked, sagging or inadequately supported/strutted.",
+       "trades": [
+        "builder",
+        "engineer"
+       ]
+      },
+      {
+       "cls": "Major",
+       "text": "Tie-down/bracing (straps, bolts) appears missing or inadequate at [location].",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Sarking & insulation",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Insulation displaced or missing in areas, reducing thermal performance.",
+       "trades": [
+        "ins"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Sarking torn or sagging with signs of water entry at [location].",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ceiling framing & supports",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Ceiling battens/hangers detached at [location]; storage loads in roof void may be overloading the ceiling.",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Electrical & services",
+     "comments": [
+      {
+       "cls": "Safety",
+       "text": "Downlights in contact with or covered by insulation; heat/fire risk.",
+       "trades": [
+        "elec"
+       ]
+      },
+      {
+       "cls": "Safety",
+       "text": "Loose, unclipped cabling and/or junction boxes without covers in roof void.",
+       "trades": [
+        "elec"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Moisture & leaks",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Water staining to roof timbers/sarking at [location] indicating a roof leak.",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Access limitations",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Roof void access restricted at [location] by low clearance/insulation/ducting. Areas not inspected may conceal defects or timber pest activity.",
+       "trades": [
+        "reinsp"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Subfloor",
+   "subs": [
+    {
+     "name": "Stumps, piers & footings",
+     "comments": [
+      {
+       "cls": "Major",
+       "text": "Stumps/piers at [location] are leaning, settled or deteriorated (concrete spalling or timber decay).",
+       "trades": [
+        "stump",
+        "engineer"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Ant caps missing, damaged or not continuous at [location].",
+       "trades": [
+        "pest",
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Bearers & joists",
+     "comments": [
+      {
+       "cls": "Major",
+       "text": "Bearers/joists at [location] are decayed, damaged or inadequately supported.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Minor",
+       "text": "Packers loose or missing between stumps and bearers at [location].",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ventilation",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Subfloor ventilation is inadequate; damp, musty conditions are conducive to timber pests and decay.",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Moisture & drainage",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Ponding water/damp soil in the subfloor at [location].",
+       "trades": [
+        "plumber",
+        "land"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Plumbing",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Leaking or corroded pipework under the building at [location].",
+       "trades": [
+        "plumber"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Debris & storage",
+     "comments": [
+      {
+       "cls": "Minor",
+       "text": "Timber debris/formwork left in the subfloor in contact with soil. Remove, as it attracts termites.",
+       "trades": [
+        "owner"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Timber pest",
+   "subs": [
+    {
+     "name": "Termite activity",
+     "comments": [
+      {
+       "cls": "Pest",
+       "text": "Active (live) subterranean termites found at [location]. Do not disturb. A treatment proposal and timber pest management program are strongly recommended.",
+       "trades": [
+        "pest"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Termite damage",
+     "comments": [
+      {
+       "cls": "Pest",
+       "text": "Termite damage/workings found at [location]; full extent not determined. Invasive inspection and assessment of affected timbers recommended.",
+       "trades": [
+        "pest",
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Termite management system",
+     "comments": [
+      {
+       "cls": "Pest",
+       "text": "No durable notice or evidence of a current termite management system was sighted; treatment history unknown.",
+       "trades": [
+        "pest"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Borers & fungal decay",
+     "comments": [
+      {
+       "cls": "Pest",
+       "text": "Evidence of borer activity (exit holes/frass) to [timber] at [location].",
+       "trades": [
+        "pest"
+       ]
+      },
+      {
+       "cls": "Pest",
+       "text": "Fungal decay (wood rot) to [timber] at [location], typically from persistent moisture.",
+       "trades": [
+        "carp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Conducive conditions",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Conditions conducive to timber pest attack were noted. See the Conducive conditions section of this report.",
+       "trades": [
+        "pest"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Conducive",
+   "subs": [
+    {
+     "name": "Moisture & leaks",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Leaking tap/outdoor fitting at [location] is wetting the ground beside the building, which attracts termites.",
+       "trades": [
+        "plumber"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Air-conditioner condensate and/or hot water relief overflow discharges against the building at [location]. Redirect away from the footings.",
+       "trades": [
+        "plumber"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Elevated moisture readings at [location] (reading: [value]). Persistent moisture is attractive to termites and promotes fungal decay.",
+       "trades": [
+        "plumber",
+        "builder"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Leaking or overflowing gutters/downpipes are saturating the ground at [location].",
+       "trades": [
+        "roofp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Drainage & ground levels",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Ground levels fall toward the building at [location], allowing water to pond against the footings/slab edge.",
+       "trades": [
+        "land",
+        "plumber"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Downpipe at [location] discharges onto the ground beside the building and is not connected to stormwater.",
+       "trades": [
+        "plumber"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Poor site drainage: damp or boggy ground beside the building at [location].",
+       "trades": [
+        "plumber",
+        "land"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Garden beds & landscaping",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Garden bed/soil built up against the external wall at [location], covering the slab edge and weep holes. Concealed termite entry is possible.",
+       "trades": [
+        "land",
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Dense vegetation against the building at [location] restricts inspection and keeps the area damp.",
+       "trades": [
+        "land",
+        "owner"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Mulch or bark chip placed against the building at [location]. Keep mulch clear of walls and the slab edge.",
+       "trades": [
+        "owner"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Paving/concrete path laid against or over the slab edge at [location], bridging any termite barrier and concealing entry.",
+       "trades": [
+        "pest",
+        "conc"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Timber in contact with soil",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Timber posts/stumps embedded in or in contact with soil at [location].",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Timber landscaping (sleepers, edging, retaining walls) in contact with the building or close to it at [location].",
+       "trades": [
+        "land",
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Timber debris, firewood or stored timber against the building or in the subfloor at [location]. Remove.",
+       "trades": [
+        "owner"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Timber stair stringers/lattice/cladding in contact with the ground at [location].",
+       "trades": [
+        "carp"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ventilation",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Subfloor ventilation is inadequate; damp, humid subfloor conditions are conducive to termites and fungal decay.",
+       "trades": [
+        "builder"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Subfloor vents blocked or obstructed at [location].",
+       "trades": [
+        "builder",
+        "owner"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Enclosed areas beneath the building (storage, lattice, cladding) restrict airflow and inspection at [location].",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Slab edge & weep holes",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Slab edge not visible for inspection at [location] (covered by soil, paving, render or cladding). Concealed termite entry is possible.",
+       "trades": [
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Weep holes covered or blocked at [location], concealing termite entry and trapping moisture.",
+       "trades": [
+        "builder",
+        "land"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Render/cladding extends to ground level at [location], bridging the slab edge.",
+       "trades": [
+        "builder"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Termite management system",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "No durable notice was sighted. Details of any termite management system and its maintenance history are unknown.",
+       "trades": [
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Durable notice sighted indicating treatment on [date]; the system may need inspection or renewal per the manufacturer’s requirements.",
+       "trades": [
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Ant caps missing, damaged or not continuous at [location].",
+       "trades": [
+        "pest",
+        "builder"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Physical/chemical barrier appears breached or bridged at [location] (e.g. by new paving, garden beds or attached structures).",
+       "trades": [
+        "pest"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Trees, stumps & fencing",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Tree stumps or old roots on the property at [location] may harbour termite colonies.",
+       "trades": [
+        "arb",
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Large trees close to the building at [location] are a potential termite nest source. Consider a termite inspection of trees.",
+       "trades": [
+        "arb",
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Timber fence attached to or in contact with the building at [location], providing a concealed termite pathway.",
+       "trades": [
+        "fence"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Attached structures",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Timber deck/pergola/carport attached to the building with posts in ground at [location], bridging any barrier.",
+       "trades": [
+        "builder",
+        "pest"
+       ]
+      },
+      {
+       "cls": "Cond",
+       "text": "Extension or attached structure built after the original construction may not be protected by the termite management system.",
+       "trades": [
+        "pest"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Risk assessment",
+     "comments": [
+      {
+       "cls": "Cond",
+       "text": "Overall degree of risk of timber pest attack: [Low / Moderate / High], based on the conducive conditions noted and the property’s surroundings. More frequent inspections are recommended where risk is moderate or higher.",
+       "trades": [
+        "pest"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
